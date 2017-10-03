@@ -1,1 +1,1 @@
-# curated-ni-terms
+# ni-terms
