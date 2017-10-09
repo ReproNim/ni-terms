@@ -1,0 +1,82 @@
+{
+  "DictionaryID": "463cce38-2f6b-4e7b-aa7b-6e21865ca52c",
+  "shortName": "agre_ados1_200102-m3",
+  "Name": "addingNewField",
+  "Description": "Testing",
+  "title": "AGRE ADOS Module 1 2001",
+  "DerivedFrom": "agre_ados1_200102",
+  "fields": [
+    {
+      "id": "new1507592536074",
+      "required": true,
+      "condition": null,
+      "aliases": null,
+      "filterElement": null,
+      "name": "SomeOld",
+      "description": "SomeNew",
+      "valueRange": [],
+      "type": "string",
+      "size": null,
+      "position": 1,
+      "dataElementId": 1,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2017646",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2017647",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2017648",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 3,
+      "name": "src_record_id",
+      "type": "Integer",
+      "size": null,
+      "description": "Research site ID for record",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2017649",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 4,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "notes": "Required field",
+      "translation": []
+    }
+  ]
+}
