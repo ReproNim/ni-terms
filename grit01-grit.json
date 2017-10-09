@@ -1,0 +1,58 @@
+{
+  "DictionaryID": "8f2f11dd-309b-4f0e-bcd3-2431ad9d6de7",
+  "shortName": "grit01",
+  "Name": "grit test form",
+  "Description": "testing",
+  "title": "12-Item Grit Scale",
+  "DerivedFrom": "grit01",
+  "fields": [
+    {
+      "id": 2081167,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "valueRange": "NDAR*",
+      "notes": null,
+      "translations": []
+    },
+    {
+      "id": 2081168,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translations": []
+    },
+    {
+      "id": 2081169,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 3,
+      "dataElementId": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "valueRange": null,
+      "notes": "Required field",
+      "translations": []
+    }
+  ]
+}
