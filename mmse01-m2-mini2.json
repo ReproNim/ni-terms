@@ -1,0 +1,71 @@
+{
+  "DictionaryID": "0ac030f9-6532-4258-80e3-758fdf55f142",
+  "shortName": "mmse01-m2",
+  "Name": "mini2",
+  "Description": "testing",
+  "title": "Mini Mental State Exam",
+  "DerivedFrom": "mmse01",
+  "fields": [
+    {
+      "id": "2122779",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2122780",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "catieid",
+        "subjid"
+      ],
+      "filterElement": null,
+      "position": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2122781",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "mmse_date"
+      ],
+      "filterElement": null,
+      "position": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "notes": "Required field",
+      "translation": []
+    },
+    {
+      "id": "2122782",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 4,
+      "name": "interview_age",
+      "type": "Integer",
+      "size": null,
+      "description": "Age in months at the time of the interview/test/sampling/imaging.",
+      "notes": "Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+      "translation": []
+    }
+  ]
+}
