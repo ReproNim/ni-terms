@@ -1,0 +1,6429 @@
+{
+  "DictionaryID": "60e3cca7-778d-419c-8d23-5d29f6a74a61",
+  "shortName": "ace_fammedhist01-m2",
+  "Name": "medicalform",
+  "Description": "test",
+  "title": "ACE Family Medical History",
+  "DerivedFrom": "ace_fammedhist01",
+  "author": "smpadhy",
+  "fields": [
+    {
+      "id": "2039265",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039266",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039267",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 3,
+      "dataElementId": 4,
+      "name": "interview_age",
+      "type": "Integer",
+      "size": null,
+      "description": "Age in months at the time of the interview/test/sampling/imaging.",
+      "notes": "Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+      "translation": []
+    },
+    {
+      "id": "2039268",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 4,
+      "dataElementId": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "notes": "Required field",
+      "translation": []
+    },
+    {
+      "id": "2039269",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 5,
+      "dataElementId": 10,
+      "name": "gender",
+      "type": "String",
+      "size": 20,
+      "description": "Sex of the subject",
+      "valueRange": [
+        " Male",
+        " Female"
+      ],
+      "notes": "M = Male; F = Female",
+      "translation": []
+    },
+    {
+      "id": "2039270",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 6,
+      "dataElementId": 5,
+      "name": "comments_misc",
+      "type": "String",
+      "size": 4000,
+      "description": "Miscellaneous comments on study, interview, methodology relevant to this form data",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039272",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 8,
+      "dataElementId": 24402,
+      "name": "family_user_def_id",
+      "type": "String",
+      "size": 20,
+      "description": "Family Pedigree User-Defined ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039273",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 9,
+      "dataElementId": 1249599,
+      "name": "subjectkey_mother",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for subject's biological mother",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039274",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 10,
+      "dataElementId": 1252417,
+      "name": "src_mother_id",
+      "type": "String",
+      "size": 100,
+      "description": "site specific mother ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039275",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_age"
+      ],
+      "filterElement": "1",
+      "position": 11,
+      "dataElementId": 916,
+      "name": "ques_agebm",
+      "type": "Integer",
+      "size": null,
+      "description": "Age -Biological Mother(in months)",
+      "valueRange": [
+        " Missing value"
+      ],
+      "notes": "-999 = Missing value",
+      "translation": []
+    },
+    {
+      "id": "2039276",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 12,
+      "dataElementId": 1249600,
+      "name": "subjectkey_father",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for subject's biological father",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039277",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 13,
+      "dataElementId": 1252418,
+      "name": "src_father_id",
+      "type": "String",
+      "size": 100,
+      "description": "site specific father ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039278",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_age"
+      ],
+      "filterElement": "1",
+      "position": 14,
+      "dataElementId": 933,
+      "name": "ques_agebf",
+      "type": "Integer",
+      "size": null,
+      "description": "Age -Biological Father(in months)",
+      "valueRange": [
+        " Missing value"
+      ],
+      "notes": "-999 = Missing value",
+      "translation": []
+    },
+    {
+      "id": "2039279",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 15,
+      "dataElementId": 1249601,
+      "name": "subjectkey_sibling1",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for subject's sibling",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039280",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 16,
+      "dataElementId": 1252419,
+      "name": "src_sibling1_id",
+      "type": "String",
+      "size": 100,
+      "description": "site specific sibling1 ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039281",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 17,
+      "dataElementId": 827,
+      "name": "ques_age1",
+      "type": "Integer",
+      "size": null,
+      "description": "Age -Sibling 1(in months)",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039282",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 18,
+      "dataElementId": 1243499,
+      "name": "sibling_type1",
+      "type": "String",
+      "size": 255,
+      "description": "Type of Sibling",
+      "valueRange": [
+        "Full Brother FB",
+        " Half Mother Brother HMB",
+        " Half Father Brother HFB",
+        " Full Sister FS",
+        " Half Mother Sister HMS",
+        " Half Father Sister HFS"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Full",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Half",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Full Brother FB",
+          "values": [
+            "Male"
+          ]
+        },
+        {
+          "key": "Full Sister FS",
+          "values": [
+            "Female"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039283",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 19,
+      "dataElementId": 828,
+      "name": "ques_gender1",
+      "type": "String",
+      "size": 50,
+      "description": "Gender -Sibling 1",
+      "valueRange": [
+        " Male",
+        " Female",
+        "Transgender"
+      ],
+      "notes": "M = Male; F = Female; T =Transgender",
+      "translation": [
+        {
+          "key": "F",
+          "values": [
+            "f"
+          ]
+        },
+        {
+          "key": "M",
+          "values": [
+            "m"
+          ]
+        },
+        {
+          "key": "F",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "M",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039284",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 20,
+      "dataElementId": 1249602,
+      "name": "subjectkey_sibling2",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for subject's sibling",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039285",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 21,
+      "dataElementId": 1252420,
+      "name": "src_sibling2_id",
+      "type": "String",
+      "size": 100,
+      "description": "site specific sibling2 ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039286",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 22,
+      "dataElementId": 845,
+      "name": "ques_age2",
+      "type": "Integer",
+      "size": null,
+      "description": "Age -Sibling 2(in months)",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039287",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 23,
+      "dataElementId": 1243561,
+      "name": "sibling_type2",
+      "type": "String",
+      "size": 255,
+      "description": "sibling type",
+      "valueRange": [
+        "Full Brother FB",
+        " Half Mother Brother HMB",
+        " Half Father Brother HFB",
+        " Full Sister FS",
+        " Half Mother Sister HMS",
+        " Half Father Sister HFS"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Half",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Full",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039288",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 24,
+      "dataElementId": 846,
+      "name": "ques_gender2",
+      "type": "String",
+      "size": 50,
+      "description": "Gender -Sibling 2",
+      "valueRange": [
+        " Male",
+        " Female"
+      ],
+      "notes": "M = Male; F = Female",
+      "translation": [
+        {
+          "key": "F",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "F",
+          "values": [
+            "f"
+          ]
+        },
+        {
+          "key": "M",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "M",
+          "values": [
+            "m"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039289",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 25,
+      "dataElementId": 1249603,
+      "name": "subjectkey_sibling3",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for subject's sibling",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039290",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 26,
+      "dataElementId": 1252421,
+      "name": "src_sibling3_id",
+      "type": "String",
+      "size": 100,
+      "description": "site specific sibling3 ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039291",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 27,
+      "dataElementId": 863,
+      "name": "ques_age3",
+      "type": "Integer",
+      "size": null,
+      "description": "Age -Sibling 3(in months)",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039292",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 28,
+      "dataElementId": 1243563,
+      "name": "sibling_type3",
+      "type": "String",
+      "size": 255,
+      "description": "sibling type",
+      "valueRange": [
+        "Full Brother FB",
+        " Half Mother Brother HMB",
+        " Half Father Brother HFB",
+        " Full Sister FS",
+        " Half Mother Sister HMS",
+        " Half Father Sister HFS"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Half",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Full",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039293",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 29,
+      "dataElementId": 864,
+      "name": "ques_gender3",
+      "type": "String",
+      "size": 50,
+      "description": "Gender -Sibling 3",
+      "valueRange": [
+        " Male",
+        " Female"
+      ],
+      "notes": "M = Male; F = Female",
+      "translation": [
+        {
+          "key": "M",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "F",
+          "values": [
+            "f"
+          ]
+        },
+        {
+          "key": "M",
+          "values": [
+            "m"
+          ]
+        },
+        {
+          "key": "F",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039294",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 30,
+      "dataElementId": 1249604,
+      "name": "subjectkey_sibling4",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for subject's sibling",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039295",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 31,
+      "dataElementId": 1252422,
+      "name": "src_sibling4_id",
+      "type": "String",
+      "size": 100,
+      "description": "site specific sibling4 ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039296",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 32,
+      "dataElementId": 881,
+      "name": "ques_age4",
+      "type": "Integer",
+      "size": null,
+      "description": "Age -Sibling 4(in months)",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039297",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 33,
+      "dataElementId": 1243565,
+      "name": "sibling_type4",
+      "type": "String",
+      "size": 255,
+      "description": "sibling type",
+      "valueRange": [
+        "Full Brother FB",
+        " Half Mother Brother HMB",
+        " Half Father Brother HFB",
+        " Full Sister FS",
+        " Half Mother Sister HMS",
+        " Half Father Sister HFS"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Full",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Half",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039298",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 34,
+      "dataElementId": 882,
+      "name": "ques_gender4",
+      "type": "String",
+      "size": 50,
+      "description": "Gender -Sibling 4",
+      "valueRange": [
+        " Male",
+        " Female"
+      ],
+      "notes": "M = Male; F = Female",
+      "translation": [
+        {
+          "key": "F",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "M",
+          "values": [
+            "m"
+          ]
+        },
+        {
+          "key": "F",
+          "values": [
+            "f"
+          ]
+        },
+        {
+          "key": "M",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039299",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 35,
+      "dataElementId": 1262085,
+      "name": "subjectkey_sibling5",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for subject's sibling",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039300",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 36,
+      "dataElementId": 1262086,
+      "name": "src_sibling5_id",
+      "type": "String",
+      "size": 100,
+      "description": "site specific sibling5 ID",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039301",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 37,
+      "dataElementId": 899,
+      "name": "ques_age5",
+      "type": "Integer",
+      "size": null,
+      "description": "Age -Sibling 5(in months)",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039302",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 38,
+      "dataElementId": 1262087,
+      "name": "sibling_type5",
+      "type": "String",
+      "size": 255,
+      "description": "sibling type",
+      "valueRange": [
+        "Full Brother FB",
+        " Half Mother Brother HMB",
+        " Half Father Brother HFB",
+        " Full Sister FS",
+        " Half Mother Sister HMS",
+        " Half Father Sister HFS"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039303",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 39,
+      "dataElementId": 900,
+      "name": "ques_gender5",
+      "type": "String",
+      "size": 50,
+      "description": "Gender -Sibling 5",
+      "valueRange": [
+        " Male",
+        " Female"
+      ],
+      "notes": "M = Male; F = Female",
+      "translation": [
+        {
+          "key": "M",
+          "values": [
+            "m"
+          ]
+        },
+        {
+          "key": "F",
+          "values": [
+            "f"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039304",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_grade"
+      ],
+      "filterElement": null,
+      "position": 40,
+      "dataElementId": 923,
+      "name": "ques_gradalbm",
+      "type": "String",
+      "size": 255,
+      "description": "Last grade completed -Biological Mother",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039305",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_grade"
+      ],
+      "filterElement": null,
+      "position": 41,
+      "dataElementId": 940,
+      "name": "ques_gradalbf",
+      "type": "String",
+      "size": 255,
+      "description": "Last grade completed -Biological Father",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039306",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_asd"
+      ],
+      "filterElement": "1",
+      "position": 42,
+      "dataElementId": 1262088,
+      "name": "asd_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Spectrum Disorder, mother\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039307",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_asd"
+      ],
+      "filterElement": "1",
+      "position": 43,
+      "dataElementId": 1262089,
+      "name": "asd_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Spectrum Disorder, father\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039308",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_asd"
+      ],
+      "filterElement": "1",
+      "position": 44,
+      "dataElementId": 1262090,
+      "name": "asd_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Spectrum Disorder, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039309",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_asd"
+      ],
+      "filterElement": "1",
+      "position": 45,
+      "dataElementId": 1262091,
+      "name": "asd_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Spectrum Disorder, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039310",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_asd"
+      ],
+      "filterElement": "1",
+      "position": 46,
+      "dataElementId": 1262092,
+      "name": "asd_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Spectrum Disorder, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039311",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_asd"
+      ],
+      "filterElement": "1",
+      "position": 47,
+      "dataElementId": 1262093,
+      "name": "asd_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Spectrum Disorder, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039312",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_asd"
+      ],
+      "filterElement": null,
+      "position": 48,
+      "dataElementId": 1262094,
+      "name": "asd_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Spectrum Disorder, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039313",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_aut"
+      ],
+      "filterElement": "1",
+      "position": 49,
+      "dataElementId": 1262095,
+      "name": "ad_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Disorder, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039314",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_aut"
+      ],
+      "filterElement": "1",
+      "position": 50,
+      "dataElementId": 1262096,
+      "name": "ad_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Disorder, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039315",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_aut"
+      ],
+      "filterElement": "1",
+      "position": 51,
+      "dataElementId": 1262097,
+      "name": "ad_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Disorder, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039316",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_aut"
+      ],
+      "filterElement": "1",
+      "position": 52,
+      "dataElementId": 1262098,
+      "name": "ad_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Disorder, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039317",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_aut"
+      ],
+      "filterElement": "1",
+      "position": 53,
+      "dataElementId": 1262099,
+      "name": "ad_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Disorder, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039318",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_aut"
+      ],
+      "filterElement": "1",
+      "position": 54,
+      "dataElementId": 1262100,
+      "name": "ad_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Disorder, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039319",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_aut"
+      ],
+      "filterElement": null,
+      "position": 55,
+      "dataElementId": 1262101,
+      "name": "ad_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Autism Disorder, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039320",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_asperger"
+      ],
+      "filterElement": "1",
+      "position": 56,
+      "dataElementId": 1262102,
+      "name": "asp_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Asperger Syndrome, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039321",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_asperger"
+      ],
+      "filterElement": "1",
+      "position": 57,
+      "dataElementId": 1262103,
+      "name": "asp_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Asperger Syndrome, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039322",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_asperger"
+      ],
+      "filterElement": "1",
+      "position": 58,
+      "dataElementId": 1262104,
+      "name": "asp_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Asperger Syndrome, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039323",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_asperger"
+      ],
+      "filterElement": "1",
+      "position": 59,
+      "dataElementId": 1262105,
+      "name": "asp_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Asperger Syndrome, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039324",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_asperger"
+      ],
+      "filterElement": "1",
+      "position": 60,
+      "dataElementId": 1262106,
+      "name": "asp_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Asperger Syndrome, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039325",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_asperger"
+      ],
+      "filterElement": "1",
+      "position": 61,
+      "dataElementId": 1262107,
+      "name": "asp_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Asperger Syndrome, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039326",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_asperger"
+      ],
+      "filterElement": null,
+      "position": 62,
+      "dataElementId": 1262108,
+      "name": "asp_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Asperger Syndrome, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039327",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_rett"
+      ],
+      "filterElement": "1",
+      "position": 63,
+      "dataElementId": 1262109,
+      "name": "rts_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Rett Syndrome, mother\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039328",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_rett"
+      ],
+      "filterElement": "1",
+      "position": 64,
+      "dataElementId": 1262110,
+      "name": "rts_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Rett Syndrome, father\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039329",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_rett"
+      ],
+      "filterElement": "1",
+      "position": 65,
+      "dataElementId": 1262111,
+      "name": "rts_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Rett Syndrome, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039330",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_rett"
+      ],
+      "filterElement": "1",
+      "position": 66,
+      "dataElementId": 1262112,
+      "name": "rts_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Rett Syndrome, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039331",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_rett"
+      ],
+      "filterElement": "1",
+      "position": 67,
+      "dataElementId": 1262113,
+      "name": "rts_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Rett Syndrome, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039332",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_rett"
+      ],
+      "filterElement": "1",
+      "position": 68,
+      "dataElementId": 1262114,
+      "name": "rts_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Rett Syndrome, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039333",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_rett"
+      ],
+      "filterElement": null,
+      "position": 69,
+      "dataElementId": 1262115,
+      "name": "rts_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Rett Syndrome, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039334",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_pdd"
+      ],
+      "filterElement": "1",
+      "position": 70,
+      "dataElementId": 1262116,
+      "name": "pddn_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"PDD-NOS, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039335",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_pdd"
+      ],
+      "filterElement": "1",
+      "position": 71,
+      "dataElementId": 1262117,
+      "name": "pddn_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"PDD-NOS, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039336",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_pdd"
+      ],
+      "filterElement": "1",
+      "position": 72,
+      "dataElementId": 1262118,
+      "name": "pddn_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"PDD-NOS, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039337",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_pdd"
+      ],
+      "filterElement": "1",
+      "position": 73,
+      "dataElementId": 1262119,
+      "name": "pddn_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"PDD-NOS, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039338",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_pdd"
+      ],
+      "filterElement": "1",
+      "position": 74,
+      "dataElementId": 1262120,
+      "name": "pddn_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"PDD-NOS, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039339",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_pdd"
+      ],
+      "filterElement": "1",
+      "position": 75,
+      "dataElementId": 1262121,
+      "name": "pddn_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"PDD-NOS, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039340",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_pdd"
+      ],
+      "filterElement": null,
+      "position": 76,
+      "dataElementId": 1262122,
+      "name": "pddn_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"PDD-NOS, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039341",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_speech"
+      ],
+      "filterElement": "1",
+      "position": 77,
+      "dataElementId": 4452,
+      "name": "mother_speechdelay",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have a Speech/Language Delay?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039342",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_speech"
+      ],
+      "filterElement": "1",
+      "position": 78,
+      "dataElementId": 4602,
+      "name": "father_speechdelay",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have a Speech/Language Delay?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039343",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_speech"
+      ],
+      "filterElement": "1",
+      "position": 79,
+      "dataElementId": 841,
+      "name": "ques_langdelay1",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a speech or language delay or impairment -Sibling 1",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039344",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_speech"
+      ],
+      "filterElement": "1",
+      "position": 80,
+      "dataElementId": 859,
+      "name": "ques_langdelay2",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a speech or language delay or impairment -Sibling 2",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039345",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_speech"
+      ],
+      "filterElement": "1",
+      "position": 81,
+      "dataElementId": 877,
+      "name": "ques_langdelay3",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a speech or language delay or impairment -Sibling 3",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039346",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_speech"
+      ],
+      "filterElement": "1",
+      "position": 82,
+      "dataElementId": 895,
+      "name": "ques_langdelay4",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a speech or language delay or impairment -Sibling 4",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039347",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_speech"
+      ],
+      "filterElement": "1",
+      "position": 83,
+      "dataElementId": 913,
+      "name": "ques_langdelay5",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a speech or language delay or impairment -Sibling 5",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039348",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_dd"
+      ],
+      "filterElement": "1",
+      "position": 84,
+      "dataElementId": 4455,
+      "name": "mother_devdelay",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have a Developmental Delay?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039349",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_dd"
+      ],
+      "filterElement": "1",
+      "position": 85,
+      "dataElementId": 4603,
+      "name": "father_devdelay",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have a Developmental Delay?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039350",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_dd"
+      ],
+      "filterElement": "1",
+      "position": 86,
+      "dataElementId": 842,
+      "name": "ques_devdelay1",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a developmental delay -Sibling 1",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039351",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_dd"
+      ],
+      "filterElement": "1",
+      "position": 87,
+      "dataElementId": 860,
+      "name": "ques_devdelay2",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a developmental delay -Sibling 2",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039352",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_dd"
+      ],
+      "filterElement": "1",
+      "position": 88,
+      "dataElementId": 878,
+      "name": "ques_devdelay3",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a developmental delay -Sibling 3",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039353",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_dd"
+      ],
+      "filterElement": "1",
+      "position": 89,
+      "dataElementId": 896,
+      "name": "ques_devdelay4",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a developmental delay -Sibling 4",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039354",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_dd"
+      ],
+      "filterElement": "1",
+      "position": 90,
+      "dataElementId": 914,
+      "name": "ques_devdelay5",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a developmental delay -Sibling 5",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039355",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_ld"
+      ],
+      "filterElement": "1",
+      "position": 91,
+      "dataElementId": 4458,
+      "name": "mother_learndis",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have a Learning Disability?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039356",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_ld"
+      ],
+      "filterElement": "1",
+      "position": 92,
+      "dataElementId": 4604,
+      "name": "father_learndis",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have a Learning Disability?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039357",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_ld"
+      ],
+      "filterElement": "1",
+      "position": 93,
+      "dataElementId": 840,
+      "name": "ques_learndis1",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a learning disability -Sibling 1",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039358",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_ld"
+      ],
+      "filterElement": "1",
+      "position": 94,
+      "dataElementId": 858,
+      "name": "ques_learndis2",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a learning disability -Sibling 2",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039359",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_ld"
+      ],
+      "filterElement": "1",
+      "position": 95,
+      "dataElementId": 876,
+      "name": "ques_learndis3",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a learning disability -Sibling 3",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039360",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_ld"
+      ],
+      "filterElement": "1",
+      "position": 96,
+      "dataElementId": 894,
+      "name": "ques_learndis4",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a learning disability -Sibling 4",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039361",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_ld"
+      ],
+      "filterElement": "1",
+      "position": 97,
+      "dataElementId": 912,
+      "name": "ques_learndis5",
+      "type": "String",
+      "size": 50,
+      "description": "Had or has a learning disability -Sibling 5",
+      "valueRange": [
+        " Yes",
+        " No",
+        " Not answered"
+      ],
+      "notes": "Y = Yes; N = No; NA = Not answered",
+      "translation": [
+        {
+          "key": "N",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "N",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Y",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039362",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_epil"
+      ],
+      "filterElement": "1",
+      "position": 98,
+      "dataElementId": 1262123,
+      "name": "seiz_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Seizure disorder/Epilepsy, mother\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039363",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_epil"
+      ],
+      "filterElement": "1",
+      "position": 99,
+      "dataElementId": 1262124,
+      "name": "seiz_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Seizure disorder/Epilepsy, father\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039364",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_epil"
+      ],
+      "filterElement": "1",
+      "position": 100,
+      "dataElementId": 1262125,
+      "name": "seiz_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Seizure disorder/Epilepsy, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039365",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_epil"
+      ],
+      "filterElement": "1",
+      "position": 101,
+      "dataElementId": 1262126,
+      "name": "seiz_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Seizure disorder/Epilepsy, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039366",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_epil"
+      ],
+      "filterElement": "1",
+      "position": 102,
+      "dataElementId": 1262127,
+      "name": "seiz_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Seizure disorder/Epilepsy, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039367",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_epil"
+      ],
+      "filterElement": "1",
+      "position": 103,
+      "dataElementId": 1262128,
+      "name": "seiz_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Seizure disorder/Epilepsy, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039368",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_epil"
+      ],
+      "filterElement": null,
+      "position": 104,
+      "dataElementId": 1262129,
+      "name": "seiz_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Seizure disorder/Epilepsy, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039369",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_cp"
+      ],
+      "filterElement": "1",
+      "position": 105,
+      "dataElementId": 1262130,
+      "name": "cerpal_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Cerebral Palsy, mother\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039370",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_cp"
+      ],
+      "filterElement": "1",
+      "position": 106,
+      "dataElementId": 1262131,
+      "name": "cerpal_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Cerebral Palsy, father\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039371",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_cp"
+      ],
+      "filterElement": "1",
+      "position": 107,
+      "dataElementId": 1262132,
+      "name": "cerpal_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Cerebral Palsy, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039372",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_cp"
+      ],
+      "filterElement": "1",
+      "position": 108,
+      "dataElementId": 1262133,
+      "name": "cerpal_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Cerebral Palsy, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039373",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_cp"
+      ],
+      "filterElement": "1",
+      "position": 109,
+      "dataElementId": 1262134,
+      "name": "cerpal_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Cerebral Palsy, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039374",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_cp"
+      ],
+      "filterElement": "1",
+      "position": 110,
+      "dataElementId": 1262135,
+      "name": "cerpal_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Cerebral Palsy, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039375",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_cp"
+      ],
+      "filterElement": null,
+      "position": 111,
+      "dataElementId": 1262136,
+      "name": "cerpal_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Cerebral Palsy, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039376",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_ds"
+      ],
+      "filterElement": "1",
+      "position": 112,
+      "dataElementId": 1262137,
+      "name": "downs_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Down Syndrome, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039377",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_ds"
+      ],
+      "filterElement": "1",
+      "position": 113,
+      "dataElementId": 1262138,
+      "name": "downs_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Down Syndrome, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039378",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_ds"
+      ],
+      "filterElement": "1",
+      "position": 114,
+      "dataElementId": 1262139,
+      "name": "downs_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Down Syndrome, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039379",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_ds"
+      ],
+      "filterElement": "1",
+      "position": 115,
+      "dataElementId": 1262140,
+      "name": "downs_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Down Syndrome, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039380",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_ds"
+      ],
+      "filterElement": "1",
+      "position": 116,
+      "dataElementId": 1262141,
+      "name": "downs_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Down Syndrome, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039381",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_ds"
+      ],
+      "filterElement": "1",
+      "position": 117,
+      "dataElementId": 1262142,
+      "name": "downs_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Down Syndrome, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039382",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_ds"
+      ],
+      "filterElement": null,
+      "position": 118,
+      "dataElementId": 1262143,
+      "name": "downs_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Down Syndrome, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039383",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_id"
+      ],
+      "filterElement": "1",
+      "position": 119,
+      "dataElementId": 1262144,
+      "name": "idmr_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Intellectual Disability/Mental Retardation, mother\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039384",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_id"
+      ],
+      "filterElement": "1",
+      "position": 120,
+      "dataElementId": 1262145,
+      "name": "idmr_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Intellectual Disability/Mental Retardation, father\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039385",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_id"
+      ],
+      "filterElement": "1",
+      "position": 121,
+      "dataElementId": 1262146,
+      "name": "idmr_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Intellectual Disability/Mental Retardation, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039386",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_id"
+      ],
+      "filterElement": "1",
+      "position": 122,
+      "dataElementId": 1262147,
+      "name": "idmr_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Intellectual Disability/Mental Retardation, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039387",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_id"
+      ],
+      "filterElement": "1",
+      "position": 123,
+      "dataElementId": 1262148,
+      "name": "idmr_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Intellectual Disability/Mental Retardation, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039388",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_id"
+      ],
+      "filterElement": "1",
+      "position": 124,
+      "dataElementId": 1262149,
+      "name": "idmr_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Intellectual Disability/Mental Retardation, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039389",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_id"
+      ],
+      "filterElement": null,
+      "position": 125,
+      "dataElementId": 1262150,
+      "name": "idmr_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Intellectual Disability/Mental Retardation, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039390",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_tsc"
+      ],
+      "filterElement": "1",
+      "position": 126,
+      "dataElementId": 4473,
+      "name": "mother_tuberscl",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have Tuberous Sclerosis?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039391",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_tsc"
+      ],
+      "filterElement": "1",
+      "position": 127,
+      "dataElementId": 4609,
+      "name": "father_tuberscl",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have Tuberous Sclerosis?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039392",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_tsc"
+      ],
+      "filterElement": "1",
+      "position": 128,
+      "dataElementId": 1262151,
+      "name": "tuberscl_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tuberous Sclerosis Complex, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039393",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_tsc"
+      ],
+      "filterElement": "1",
+      "position": 129,
+      "dataElementId": 1262152,
+      "name": "tuberscl_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tuberous Sclerosis Complex, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039394",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_tsc"
+      ],
+      "filterElement": "1",
+      "position": 130,
+      "dataElementId": 1262153,
+      "name": "tuberscl_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tuberous Sclerosis Complex, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039395",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_tsc"
+      ],
+      "filterElement": "1",
+      "position": 131,
+      "dataElementId": 1262154,
+      "name": "tuberscl_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tuberous Sclerosis Complex, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039396",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_tsc"
+      ],
+      "filterElement": null,
+      "position": 132,
+      "dataElementId": 1262155,
+      "name": "tuberscl_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tuberous Sclerosis Complex, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039397",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_frax"
+      ],
+      "filterElement": "1",
+      "position": 133,
+      "dataElementId": 4476,
+      "name": "mother_fragilex",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have Fragile X?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039398",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_frax"
+      ],
+      "filterElement": "1",
+      "position": 134,
+      "dataElementId": 4610,
+      "name": "father_fragilex",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have Fragile X?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039399",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_frax"
+      ],
+      "filterElement": "1",
+      "position": 135,
+      "dataElementId": 1262156,
+      "name": "fx_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Fragile X, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039400",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_frax"
+      ],
+      "filterElement": "1",
+      "position": 136,
+      "dataElementId": 1262157,
+      "name": "fx_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Fragile X, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039401",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_frax"
+      ],
+      "filterElement": "1",
+      "position": 137,
+      "dataElementId": 1262158,
+      "name": "fx_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Fragile X, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039402",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_frax"
+      ],
+      "filterElement": "1",
+      "position": 138,
+      "dataElementId": 1262159,
+      "name": "fx_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Fragile X, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039403",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_frax"
+      ],
+      "filterElement": null,
+      "position": 139,
+      "dataElementId": 1262160,
+      "name": "fx_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Fragile X, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039404",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_neuro"
+      ],
+      "filterElement": "1",
+      "position": 140,
+      "dataElementId": 1262161,
+      "name": "nfi_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Neurofibromatosis I, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039405",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_neuro"
+      ],
+      "filterElement": "1",
+      "position": 141,
+      "dataElementId": 1262162,
+      "name": "nfi_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Neurofibromatosis I, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039406",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_neuro"
+      ],
+      "filterElement": "1",
+      "position": 142,
+      "dataElementId": 1262163,
+      "name": "nfi_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Neurofibromatosis I, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039407",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_neuro"
+      ],
+      "filterElement": "1",
+      "position": 143,
+      "dataElementId": 1262164,
+      "name": "nfi_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Neurofibromatosis I, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039408",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_neuro"
+      ],
+      "filterElement": "1",
+      "position": 144,
+      "dataElementId": 1262165,
+      "name": "nfi_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Neurofibromatosis I, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039409",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_neuro"
+      ],
+      "filterElement": "1",
+      "position": 145,
+      "dataElementId": 1262166,
+      "name": "nfi_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Neurofibromatosis I, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039410",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_neuro"
+      ],
+      "filterElement": null,
+      "position": 146,
+      "dataElementId": 1262167,
+      "name": "nfi_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Neurofibromatosis I, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039411",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_cb"
+      ],
+      "filterElement": "1",
+      "position": 147,
+      "dataElementId": 1262168,
+      "name": "cblind_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Congenital Blindness, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039412",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_cb"
+      ],
+      "filterElement": "1",
+      "position": 148,
+      "dataElementId": 1262169,
+      "name": "cblind_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Congenital Blindness, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039413",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_cb"
+      ],
+      "filterElement": "1",
+      "position": 149,
+      "dataElementId": 1262170,
+      "name": "cblind_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Congenital Blindness, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039414",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_cb"
+      ],
+      "filterElement": "1",
+      "position": 150,
+      "dataElementId": 1262171,
+      "name": "cblind_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Congenital Blindness, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039415",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_cb"
+      ],
+      "filterElement": "1",
+      "position": 151,
+      "dataElementId": 1262172,
+      "name": "cblind_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Congenital Blindness, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039416",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_cb"
+      ],
+      "filterElement": "1",
+      "position": 152,
+      "dataElementId": 1262173,
+      "name": "cblind_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Congenital Blindness, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039417",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_cb"
+      ],
+      "filterElement": null,
+      "position": 153,
+      "dataElementId": 1262174,
+      "name": "cblind_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Congenital Blindness, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039418",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_deaf"
+      ],
+      "filterElement": "1",
+      "position": 154,
+      "dataElementId": 1262175,
+      "name": "heard_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing impairment/deafness, mother\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039419",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_deaf"
+      ],
+      "filterElement": "1",
+      "position": 155,
+      "dataElementId": 1262176,
+      "name": "heard_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing impairment/deafness, father\"",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039420",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_deaf"
+      ],
+      "filterElement": "1",
+      "position": 156,
+      "dataElementId": 1262177,
+      "name": "heard_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing impairment/deafness, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039421",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_deaf"
+      ],
+      "filterElement": "1",
+      "position": 157,
+      "dataElementId": 1262178,
+      "name": "heard_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing impairment/deafness, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039422",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_deaf"
+      ],
+      "filterElement": "1",
+      "position": 158,
+      "dataElementId": 1262179,
+      "name": "heard_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing impairment/deafness, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039423",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_deaf"
+      ],
+      "filterElement": "1",
+      "position": 159,
+      "dataElementId": 1262180,
+      "name": "heard_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing impairment/deafness, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039424",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_deaf"
+      ],
+      "filterElement": null,
+      "position": 160,
+      "dataElementId": 1262181,
+      "name": "heard_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing impairment/deafness, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039425",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_hearaid"
+      ],
+      "filterElement": "1",
+      "position": 161,
+      "dataElementId": 1262182,
+      "name": "hearcor_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing corrected with hearing aid(s) or cochlear implant?, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039426",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_hearaid"
+      ],
+      "filterElement": "1",
+      "position": 162,
+      "dataElementId": 1262183,
+      "name": "hearcor_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing corrected with hearing aid(s) or cochlear implant?, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039427",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_hearaid"
+      ],
+      "filterElement": "1",
+      "position": 163,
+      "dataElementId": 1262184,
+      "name": "hearcor_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing corrected with hearing aid(s) or cochlear implant?, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039428",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_hearaid"
+      ],
+      "filterElement": "1",
+      "position": 164,
+      "dataElementId": 1262185,
+      "name": "hearcor_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing corrected with hearing aid(s) or cochlear implant?, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039429",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_hearaid"
+      ],
+      "filterElement": "1",
+      "position": 165,
+      "dataElementId": 1262186,
+      "name": "hearcor_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing corrected with hearing aid(s) or cochlear implant?, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039430",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_hearaid"
+      ],
+      "filterElement": "1",
+      "position": 166,
+      "dataElementId": 1262187,
+      "name": "hearcor_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing corrected with hearing aid(s) or cochlear implant?, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039431",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_hearaid"
+      ],
+      "filterElement": null,
+      "position": 167,
+      "dataElementId": 1262188,
+      "name": "hearcor_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Hearing corrected with hearing aid(s) or cochlear implant?, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039432",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_bipolar"
+      ],
+      "filterElement": "1",
+      "position": 168,
+      "dataElementId": 4502,
+      "name": "mother_bipolar",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have a Bipolar Disorder?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039433",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_bipolar"
+      ],
+      "filterElement": "1",
+      "position": 169,
+      "dataElementId": 4620,
+      "name": "father_bipolar",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have a Bipolar Disorder?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039434",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_bipolar"
+      ],
+      "filterElement": "1",
+      "position": 170,
+      "dataElementId": 1262189,
+      "name": "bipd_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "Bipolar disorder (Manic/depression), sibling 1",
+      "valueRange": [
+        "Yes",
+        " No",
+        " Probable",
+        " Refused"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039435",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_bipolar"
+      ],
+      "filterElement": "1",
+      "position": 171,
+      "dataElementId": 1262190,
+      "name": "bipd_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Bipolar disorder (Manic/depression), sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039436",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_bipolar"
+      ],
+      "filterElement": "1",
+      "position": 172,
+      "dataElementId": 1262191,
+      "name": "bipd_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Bipolar disorder (Manic/depression), sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039437",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_bipolar"
+      ],
+      "filterElement": "1",
+      "position": 173,
+      "dataElementId": 1262192,
+      "name": "bipd_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Bipolar disorder (Manic/depression), sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039438",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_bipolar"
+      ],
+      "filterElement": null,
+      "position": 174,
+      "dataElementId": 1262193,
+      "name": "bipd_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Bipolar disorder (Manic/depression), sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039439",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_depress"
+      ],
+      "filterElement": "1",
+      "position": 175,
+      "dataElementId": 4505,
+      "name": "mother_depression",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have Depression?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039440",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_depress"
+      ],
+      "filterElement": "1",
+      "position": 176,
+      "dataElementId": 4621,
+      "name": "father_depression",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have Depression?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039441",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_depress"
+      ],
+      "filterElement": "1",
+      "position": 177,
+      "dataElementId": 1262194,
+      "name": "depr_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Depression, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039442",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_depress"
+      ],
+      "filterElement": "1",
+      "position": 178,
+      "dataElementId": 1262195,
+      "name": "depr_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Depression, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039443",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_depress"
+      ],
+      "filterElement": "1",
+      "position": 179,
+      "dataElementId": 1262196,
+      "name": "depr_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Depression, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039444",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_depress"
+      ],
+      "filterElement": "1",
+      "position": 180,
+      "dataElementId": 1262197,
+      "name": "depr_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Depression, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039445",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_depress"
+      ],
+      "filterElement": null,
+      "position": 181,
+      "dataElementId": 1262198,
+      "name": "depr_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Depression, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039446",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_anxiety"
+      ],
+      "filterElement": "1",
+      "position": 182,
+      "dataElementId": 4508,
+      "name": "mother_anxiety",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have an Anxiety Disorder?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039447",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_anxiety"
+      ],
+      "filterElement": "1",
+      "position": 183,
+      "dataElementId": 4622,
+      "name": "father_anxiety",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have an Anxiety Disorder?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039448",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_anxiety"
+      ],
+      "filterElement": "1",
+      "position": 184,
+      "dataElementId": 1262199,
+      "name": "anx_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Anxiety disorder, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039449",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_anxiety"
+      ],
+      "filterElement": "1",
+      "position": 185,
+      "dataElementId": 1262200,
+      "name": "anx_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Anxiety disorder, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039450",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_anxiety"
+      ],
+      "filterElement": "1",
+      "position": 186,
+      "dataElementId": 1262201,
+      "name": "anx_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Anxiety disorder, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039451",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_anxiety"
+      ],
+      "filterElement": "1",
+      "position": 187,
+      "dataElementId": 1262202,
+      "name": "anx_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Anxiety disorder, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039452",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_anxiety"
+      ],
+      "filterElement": null,
+      "position": 188,
+      "dataElementId": 1262203,
+      "name": "anx_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Anxiety disorder, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039453",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_ocd"
+      ],
+      "filterElement": "1",
+      "position": 189,
+      "dataElementId": 4511,
+      "name": "mother_ocd",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have Obsessive Compulsive Disorder?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039454",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_ocd"
+      ],
+      "filterElement": "1",
+      "position": 190,
+      "dataElementId": 4623,
+      "name": "father_ocd",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have Obsessive Compulsive Disorder?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039455",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_ocd"
+      ],
+      "filterElement": "1",
+      "position": 191,
+      "dataElementId": 1262204,
+      "name": "ocd_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Obsessive compulsive disorder, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039456",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_ocd"
+      ],
+      "filterElement": "1",
+      "position": 192,
+      "dataElementId": 1262205,
+      "name": "ocd_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Obsessive compulsive disorder, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039457",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_ocd"
+      ],
+      "filterElement": "1",
+      "position": 193,
+      "dataElementId": 1262206,
+      "name": "ocd_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Obsessive compulsive disorder, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039458",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_ocd"
+      ],
+      "filterElement": "1",
+      "position": 194,
+      "dataElementId": 1262207,
+      "name": "ocd_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Obsessive compulsive disorder, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039459",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_ocd"
+      ],
+      "filterElement": null,
+      "position": 195,
+      "dataElementId": 1262208,
+      "name": "ocd_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Obsessive compulsive disorder, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039460",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_schizo"
+      ],
+      "filterElement": "1",
+      "position": 196,
+      "dataElementId": 4514,
+      "name": "mother_schizophrenia",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have Schizophrenia?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039461",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_schizo"
+      ],
+      "filterElement": "1",
+      "position": 197,
+      "dataElementId": 4624,
+      "name": "father_schizophrenia",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have Schizophrenia?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039462",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_schizo"
+      ],
+      "filterElement": "1",
+      "position": 198,
+      "dataElementId": 1262209,
+      "name": "schiz_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "Schizophrenia, sibling 1",
+      "valueRange": [
+        "Yes",
+        " No",
+        " Probable",
+        " Refused"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039463",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_schizo"
+      ],
+      "filterElement": "1",
+      "position": 199,
+      "dataElementId": 1262210,
+      "name": "schiz_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Schizophrenia, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039464",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_schizo"
+      ],
+      "filterElement": "1",
+      "position": 200,
+      "dataElementId": 1262211,
+      "name": "schiz_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Schizophrenia, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039465",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_schizo"
+      ],
+      "filterElement": "1",
+      "position": 201,
+      "dataElementId": 1262212,
+      "name": "schiz_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Schizophrenia, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039466",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_schizo"
+      ],
+      "filterElement": null,
+      "position": 202,
+      "dataElementId": 1262213,
+      "name": "schiz_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Schizophrenia, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039467",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_selfinj"
+      ],
+      "filterElement": "1",
+      "position": 203,
+      "dataElementId": 4521,
+      "name": "mother_selfinj",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have Self-Injuring Behavior?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039468",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_selfinj"
+      ],
+      "filterElement": "1",
+      "position": 204,
+      "dataElementId": 4627,
+      "name": "father_selfinj",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have Self-Injuring Behavior?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039469",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_selfinj"
+      ],
+      "filterElement": "1",
+      "position": 205,
+      "dataElementId": 1262214,
+      "name": "sinjb_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Self-injuring behavior, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039470",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_selfinj"
+      ],
+      "filterElement": "1",
+      "position": 206,
+      "dataElementId": 1262215,
+      "name": "sinjb_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Self-injuring behavior, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039471",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_selfinj"
+      ],
+      "filterElement": "1",
+      "position": 207,
+      "dataElementId": 1262216,
+      "name": "sinjb_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Self-injuring behavior, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039472",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_selfinj"
+      ],
+      "filterElement": "1",
+      "position": 208,
+      "dataElementId": 1262217,
+      "name": "sinjb_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Self-injuring behavior, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039473",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_selfinj"
+      ],
+      "filterElement": null,
+      "position": 209,
+      "dataElementId": 1262218,
+      "name": "sinjb_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Self-injuring behavior, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039474",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_adhd"
+      ],
+      "filterElement": "1",
+      "position": 210,
+      "dataElementId": 4531,
+      "name": "mother_adhd",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have Attention Deficit Hyperactivity Disorder (ADHD)?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039475",
+      "required": false,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_adhd"
+      ],
+      "filterElement": "1",
+      "position": 211,
+      "dataElementId": 4631,
+      "name": "father_adhd",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have Attention Deficit Hyperactivity Disorder (ADHD)?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " 77",
+        " 99",
+        " -999"
+      ],
+      "notes": "77=N/A; 99= DK; -999 =missing",
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039476",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_adhd"
+      ],
+      "filterElement": "1",
+      "position": 212,
+      "dataElementId": 1262219,
+      "name": "adhd_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Attention deficit hyperactivity disorder (ADHD), sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039477",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_adhd"
+      ],
+      "filterElement": "1",
+      "position": 213,
+      "dataElementId": 1262220,
+      "name": "adhd_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Attention deficit hyperactivity disorder (ADHD), sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039478",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_adhd"
+      ],
+      "filterElement": "1",
+      "position": 214,
+      "dataElementId": 1262221,
+      "name": "adhd_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Attention deficit hyperactivity disorder (ADHD), sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039479",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_adhd"
+      ],
+      "filterElement": "1",
+      "position": 215,
+      "dataElementId": 1262222,
+      "name": "adhd_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Attention deficit hyperactivity disorder (ADHD), sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039480",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_adhd"
+      ],
+      "filterElement": null,
+      "position": 216,
+      "dataElementId": 1262223,
+      "name": "adhd_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Attention deficit hyperactivity disorder (ADHD), sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039481",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_eatdis"
+      ],
+      "filterElement": "1",
+      "position": 217,
+      "dataElementId": 4534,
+      "name": "mother_eatingdis",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Mother have an Eating Disorder?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039482",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_eatdis"
+      ],
+      "filterElement": "1",
+      "position": 218,
+      "dataElementId": 4632,
+      "name": "father_eatingdis",
+      "type": "String",
+      "size": 50,
+      "description": "Does (did) the Child's Father have an Eating Disorder?",
+      "valueRange": [
+        "Yes",
+        "No"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "Yes",
+          "values": [
+            "y"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "N"
+          ]
+        },
+        {
+          "key": "No",
+          "values": [
+            "n"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2039483",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_eatdis"
+      ],
+      "filterElement": "1",
+      "position": 219,
+      "dataElementId": 1262224,
+      "name": "eatd_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Eating disorder: Bulimia, Anorexia, or other., sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039484",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_eatdis"
+      ],
+      "filterElement": "1",
+      "position": 220,
+      "dataElementId": 1262225,
+      "name": "eatd_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Eating disorder: Bulimia, Anorexia, or other., sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039485",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_eatdis"
+      ],
+      "filterElement": "1",
+      "position": 221,
+      "dataElementId": 1262226,
+      "name": "eatd_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Eating disorder: Bulimia, Anorexia, or other., sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039486",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_eatdis"
+      ],
+      "filterElement": "1",
+      "position": 222,
+      "dataElementId": 1262227,
+      "name": "eatd_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Eating disorder: Bulimia, Anorexia, or other., sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039487",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_eatdis"
+      ],
+      "filterElement": null,
+      "position": 223,
+      "dataElementId": 1262228,
+      "name": "eatd_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Eating disorder: Bulimia, Anorexia, or other., sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039488",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_sleep"
+      ],
+      "filterElement": "1",
+      "position": 224,
+      "dataElementId": 1262229,
+      "name": "dsp_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Disrupted sleep patterns, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039489",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_sleep"
+      ],
+      "filterElement": "1",
+      "position": 225,
+      "dataElementId": 1262230,
+      "name": "dsp_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Disrupted sleep patterns, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039490",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_sleep"
+      ],
+      "filterElement": "1",
+      "position": 226,
+      "dataElementId": 1262231,
+      "name": "dsp_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Disrupted sleep patterns, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039491",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_sleep"
+      ],
+      "filterElement": "1",
+      "position": 227,
+      "dataElementId": 1262232,
+      "name": "dsp_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Disrupted sleep patterns, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039492",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_sleep"
+      ],
+      "filterElement": "1",
+      "position": 228,
+      "dataElementId": 1262233,
+      "name": "dsp_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Disrupted sleep patterns, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039493",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_sleep"
+      ],
+      "filterElement": "1",
+      "position": 229,
+      "dataElementId": 1262234,
+      "name": "dsp_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Disrupted sleep patterns, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039494",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_sleep"
+      ],
+      "filterElement": null,
+      "position": 230,
+      "dataElementId": 1262235,
+      "name": "dsp_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Disrupted sleep patterns, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039495",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biomom_tourette"
+      ],
+      "filterElement": "1",
+      "position": 231,
+      "dataElementId": 1262236,
+      "name": "tours_moth",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tourette Syndrome, mother\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039496",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_biodad_tourette"
+      ],
+      "filterElement": "1",
+      "position": 232,
+      "dataElementId": 1262237,
+      "name": "tours_fath",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tourette Syndrome, father\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039497",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib1_tourette"
+      ],
+      "filterElement": "1",
+      "position": 233,
+      "dataElementId": 1262238,
+      "name": "tours_sib1",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tourette Syndrome, sibling 1\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039498",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib2_tourette"
+      ],
+      "filterElement": "1",
+      "position": 234,
+      "dataElementId": 1262239,
+      "name": "tours_sib2",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tourette Syndrome, sibling 2\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039499",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib3_tourette"
+      ],
+      "filterElement": "1",
+      "position": 235,
+      "dataElementId": 1262240,
+      "name": "tours_sib3",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tourette Syndrome, sibling 3\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039500",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib4_tourette"
+      ],
+      "filterElement": "1",
+      "position": 236,
+      "dataElementId": 1262241,
+      "name": "tours_sib4",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tourette Syndrome, sibling 4\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2039501",
+      "required": true,
+      "condition": null,
+      "aliases": [
+        "ace_sib5_tourette"
+      ],
+      "filterElement": null,
+      "position": 237,
+      "dataElementId": 1262242,
+      "name": "tours_sib5",
+      "type": "String",
+      "size": 10,
+      "description": "\"Tourette Syndrome, sibling 5\"",
+      "valueRange": [
+        "Yes",
+        " No"
+      ],
+      "notes": null,
+      "translation": []
+    }
+  ]
+}

@@ -1,0 +1,1109 @@
+{
+  "DictionaryID": "41eeaa8c-1d77-452e-9bf5-7ef751d43978",
+  "shortName": "bu_demographics01-m2",
+  "Name": "bu-demo",
+  "Description": "Test",
+  "title": "BU Demographics",
+  "DerivedFrom": "bu_demographics01",
+  "author": "smpadhy",
+  "fields": [
+    {
+      "id": "2051583",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051584",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051585",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 3,
+      "dataElementId": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "notes": "Required field",
+      "translation": []
+    },
+    {
+      "id": "2051586",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 4,
+      "dataElementId": 4,
+      "name": "interview_age",
+      "type": "Integer",
+      "size": null,
+      "description": "Age in months at the time of the interview/test/sampling/imaging.",
+      "notes": "Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+      "translation": []
+    },
+    {
+      "id": "2051587",
+      "required": true,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 5,
+      "dataElementId": 10,
+      "name": "gender",
+      "type": "String",
+      "size": 20,
+      "description": "Sex of the subject",
+      "valueRange": [
+        " Male",
+        " Female"
+      ],
+      "notes": "M = Male; F = Female",
+      "translation": []
+    },
+    {
+      "id": "2051589",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 7,
+      "dataElementId": 19191,
+      "name": "race",
+      "type": "String",
+      "size": 30,
+      "description": "Race of study subject",
+      "valueRange": [
+        "American Indian/Alaska Native",
+        " Asian",
+        " Hawaiian or Pacific Islander",
+        " Black or African American",
+        " White",
+        " More than one race",
+        " Unknown or not reported"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051590",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 8,
+      "dataElementId": 19192,
+      "name": "ethnicity",
+      "type": "String",
+      "size": 30,
+      "description": "Ethnicity of participant",
+      "valueRange": [
+        "Hispanic or Latino",
+        " Not Hispanic or Latino",
+        " Unknown"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "0"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051591",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 9,
+      "dataElementId": 1251396,
+      "name": "part_education",
+      "type": "String",
+      "size": 100,
+      "description": "Participant's Current Education Level",
+      "valueRange": [
+        "Day care",
+        "Nursery",
+        "Preschool",
+        "Kindergarten",
+        "Elementary School",
+        "Secondary School",
+        "Other"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051592",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 10,
+      "dataElementId": 1268810,
+      "name": "child_edu_other",
+      "type": "String",
+      "size": 50,
+      "description": "Specify child educational situation if not any of the above",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051593",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 11,
+      "dataElementId": 1237423,
+      "name": "household_number_in_house",
+      "type": "Integer",
+      "size": null,
+      "description": "Number of people living in primary residence for subject (proband)",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051594",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 12,
+      "dataElementId": 1251409,
+      "name": "num_in_house_adults",
+      "type": "Integer",
+      "size": null,
+      "description": "Number of Individuals in Household Adults",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051595",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 13,
+      "dataElementId": 1251410,
+      "name": "num_in_house_kids",
+      "type": "Integer",
+      "size": null,
+      "description": "Number of Individuals in Household Children",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051596",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 14,
+      "dataElementId": 1268811,
+      "name": "demo_siblingscount",
+      "type": "Integer",
+      "size": null,
+      "description": "Number of siblings",
+      "notes": "888 = not applicable; 999 = missing",
+      "translation": []
+    },
+    {
+      "id": "2051597",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 15,
+      "dataElementId": 1268812,
+      "name": "sibling1_diag",
+      "type": "String",
+      "size": 20,
+      "description": "sibling  1 diagnosis",
+      "valueRange": [
+        "None",
+        " ASD",
+        " Other/specify"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051598",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 16,
+      "dataElementId": 1268813,
+      "name": "sibling2_diag",
+      "type": "String",
+      "size": 20,
+      "description": "sibling  2 diagnosis",
+      "valueRange": [
+        "None",
+        " ASD",
+        " Other/specify"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051599",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 17,
+      "dataElementId": 1268814,
+      "name": "sibling3_diag",
+      "type": "String",
+      "size": 20,
+      "description": "sibling  3  diagnosis",
+      "valueRange": [
+        "None",
+        " ASD",
+        " Other/specify"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051600",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 18,
+      "dataElementId": 1268815,
+      "name": "sibling4_diag",
+      "type": "String",
+      "size": 20,
+      "description": "sibling  4 diagnosis",
+      "valueRange": [
+        "None",
+        " ASD",
+        " Other/specify"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051601",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 19,
+      "dataElementId": 1268816,
+      "name": "sibling5_diag",
+      "type": "String",
+      "size": 20,
+      "description": "sibling  5 diagnosis",
+      "valueRange": [
+        "None",
+        " ASD",
+        " Other/specify"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051602",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 20,
+      "dataElementId": 1268817,
+      "name": "demo_resp_status",
+      "type": "Integer",
+      "size": null,
+      "description": "respondent's marital status",
+      "valueRange": [
+        " Married",
+        " Remarried",
+        " Live with partner (not married)",
+        " Separated",
+        " Divorced",
+        " Single (never married)",
+        " Widowed",
+        "Married or Living Together",
+        " Missing/Not Applicable",
+        " Other",
+        "Refused to answer"
+      ],
+      "notes": "1 = Married; 2 = Remarried; 3 = Live with partner (not married); 4 = Separated; 5 = Divorced; 6 = Single (never married); 7 = Widowed; 8=Married or Living Together;9 = Missing/Not Applicable; 10 = Other; 11=Refused to answer",
+      "translation": []
+    },
+    {
+      "id": "2051603",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 21,
+      "dataElementId": 1253774,
+      "name": "liveswith",
+      "type": "String",
+      "size": 100,
+      "description": "child lives with",
+      "valueRange": [
+        "Both biological mother and father",
+        "Biological mother only",
+        "Biological father only",
+        "Biological mother and stepfather",
+        "Biological father and stepmother",
+        "Adoptive parents",
+        "Foster parents",
+        "Relatives",
+        "Other"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Biological father and stepmother",
+          "values": [
+            "5"
+          ]
+        },
+        {
+          "key": "Relatives",
+          "values": [
+            "8"
+          ]
+        },
+        {
+          "key": "Biological father only",
+          "values": [
+            "4"
+          ]
+        },
+        {
+          "key": "Both biological mother and father",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Other",
+          "values": [
+            "9"
+          ]
+        },
+        {
+          "key": "Biological mother and stepfather",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Biological mother only",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Adoptive parents",
+          "values": [
+            "6"
+          ]
+        },
+        {
+          "key": "Foster parents",
+          "values": [
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051604",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 22,
+      "dataElementId": 1237401,
+      "name": "bio_mother_ethnicity",
+      "type": "String",
+      "size": 50,
+      "description": "Biological Mother Ethnicity",
+      "valueRange": [
+        "Hispanic or Latino",
+        "Not Hispanic or Latino",
+        " No Answer"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "No Answer",
+          "values": [
+            "-999"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "No Answer",
+          "values": [
+            "Unknown or not reported"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051605",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 23,
+      "dataElementId": 1237402,
+      "name": "bio_mother_race",
+      "type": "String",
+      "size": 150,
+      "description": "Biological Mother Race",
+      "valueRange": [
+        "American Indian/Alaska Native",
+        " Asian",
+        " Hawaiian or Pacific Islander",
+        " Black or African American",
+        " White",
+        " More than one race",
+        " Unknown or not reported"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "More than one race",
+          "values": [
+            "90"
+          ]
+        },
+        {
+          "key": "Black or African American",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "White",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Unknown or not reported",
+          "values": [
+            "99"
+          ]
+        },
+        {
+          "key": "Asian",
+          "values": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051606",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 24,
+      "dataElementId": 16708,
+      "name": "mother_education",
+      "type": "String",
+      "size": 30,
+      "description": "Mother education level",
+      "valueRange": [
+        "Less Than 6th Grade",
+        "Less Than High School",
+        "High School",
+        "Some College",
+        "College",
+        "Some Graduate Level",
+        "Graduate Level",
+        "NA"
+      ],
+      "notes": "NA = Not available",
+      "translation": []
+    },
+    {
+      "id": "2051607",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 25,
+      "dataElementId": 1265857,
+      "name": "demo_momwork",
+      "type": "Integer",
+      "size": null,
+      "description": "Does the mother work outside the home?:",
+      "valueRange": [
+        " No",
+        " Part-time",
+        " Full-time"
+      ],
+      "notes": "0 = No; 1 = Part-time; 2 = Full-time",
+      "translation": []
+    },
+    {
+      "id": "2051608",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 26,
+      "dataElementId": 1237407,
+      "name": "bio_mother_occupation",
+      "type": "String",
+      "size": 100,
+      "description": "Biological Mother Occupation",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051609",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 27,
+      "dataElementId": 1268818,
+      "name": "partner_resp_relationship",
+      "type": "String",
+      "size": 100,
+      "description": "Respondent's  partner/spouse relationship to child",
+      "notes": "1 = Biological mom; 2 = Stepmom; 3 = Adoptive mom; 4 = Grandmother; 5 = Foster mother; 6 = Biological dad; 7 = Stepdad; 8 = Adoptive dad; 9 = Grandfather; 10 = Other",
+      "translation": []
+    },
+    {
+      "id": "2051610",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 28,
+      "dataElementId": 1237411,
+      "name": "bio_father_ethnicity",
+      "type": "String",
+      "size": 50,
+      "description": "\"Biological Father ethnicity (Hispanic or Latino, Not Hispanic or Latino, No Answer)\"",
+      "valueRange": [
+        "Hispanic or Latino",
+        " Not Hispanic or Latino",
+        " No Answer"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "No Answer",
+          "values": [
+            "-999"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051611",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 29,
+      "dataElementId": 1237412,
+      "name": "bio_father_race",
+      "type": "String",
+      "size": 150,
+      "description": "Biological Father Race",
+      "valueRange": [
+        "American Indian/Alaska Native",
+        " Asian",
+        " Hawaiian or Pacific Islander",
+        " Black or African American",
+        " White",
+        " More than one race",
+        " Unknown or not reported"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051612",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 30,
+      "dataElementId": 1268819,
+      "name": "demo_partner_emp_status",
+      "type": "String",
+      "size": 100,
+      "description": "Spouse/partner employment status",
+      "valueRange": [
+        "Not employed",
+        " Employed part-time",
+        " Employed full-time",
+        " Full-time student",
+        "Part-time student",
+        " Other"
+      ],
+      "notes": "NYU DEMOGRAPHICS: Full-time working is 35 or more hours a week. Part-time working is less than 35 hours a week. Full-time student is 3 or more classes per semester. Part-time student is 1 or 2 classes per semester.",
+      "translation": [
+        {
+          "key": "Not employed",
+          "values": [
+            "5"
+          ]
+        },
+        {
+          "key": "Other",
+          "values": [
+            "6"
+          ]
+        },
+        {
+          "key": "Employed full-time",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Employed part-time",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Full-time student",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Part-time student",
+          "values": [
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051613",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 31,
+      "dataElementId": 1268820,
+      "name": "demo_partner_edu",
+      "type": "String",
+      "size": 100,
+      "description": "Spouse/partner highest education level",
+      "valueRange": [
+        "Less than 8th grade",
+        " 9th grade to 11th grade",
+        " High School Graduate/GED or equivalent",
+        " Some college credit, but less than 1 year",
+        " Technical college/vocational school",
+        " Associate degree",
+        " Bachelor degree",
+        " Master degree",
+        " Professional degree (MD, PhD, JD)"
+      ],
+      "notes": null,
+      "translation": [
+        {
+          "key": "Master degree",
+          "values": [
+            "8"
+          ]
+        },
+        {
+          "key": "Associate degree",
+          "values": [
+            "5"
+          ]
+        },
+        {
+          "key": "Some college credit, but less than 1 year",
+          "values": [
+            "6"
+          ]
+        },
+        {
+          "key": "9th grade to 11th grade",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Bachelor degree",
+          "values": [
+            "7"
+          ]
+        },
+        {
+          "key": "Professional degree (MD, PhD, JD)",
+          "values": [
+            "9"
+          ]
+        },
+        {
+          "key": "Technical college/vocational school",
+          "values": [
+            "4"
+          ]
+        },
+        {
+          "key": "Less than 8th grade",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "High School Graduate/GED or equivalent",
+          "values": [
+            "3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051614",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 32,
+      "dataElementId": 1268821,
+      "name": "demo_partner_occupation",
+      "type": "String",
+      "size": 100,
+      "description": "Spouse/partner Occupation",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051615",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 33,
+      "dataElementId": 1268822,
+      "name": "partner_involvem",
+      "type": "Integer",
+      "size": null,
+      "description": "How involved is your partner in caring for your child",
+      "valueRange": [
+        " Not at all involved",
+        " Somewhat involved",
+        " Very involved",
+        " Extremely involved"
+      ],
+      "notes": "0 = Not at all involved; 1 = Somewhat involved; 2 = Very involved; 3 = Extremely involved",
+      "translation": []
+    },
+    {
+      "id": "2051616",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 34,
+      "dataElementId": 1265860,
+      "name": "demo_income",
+      "type": "String",
+      "size": 2,
+      "description": "What is the family income per year:",
+      "valueRange": [
+        " Less than $10,000",
+        " $10,000-$20,000",
+        " $20,000-$30,000",
+        " $30,000-$40,000",
+        " $40,000-$50,000",
+        " $50,000-$60,000",
+        " $60,000-$80,000",
+        " $80,000-$100,000",
+        " Above $100,000",
+        "$50,000-$74,999",
+        "$75,000-$99,999",
+        "$100,000-$149,999",
+        "$150,000-$199,999",
+        "$200,000 or more",
+        "Refused"
+      ],
+      "notes": "a = Less than $10,000; b = $10,000-$20,000; c = $20,000-$30,000; d = $30,000-$40,000; e = $40,000-$50,000; f = $50,000-$60,000; g = $60,000-$80,000; h = $80,000-$100,000; i = Above $100,000; j=$50,000-$74,999; k=$75,000-$99,999; l=$100,000-$149,999; m=$150,000-$199,999; n=$200,000 or more; -7=Refused",
+      "translation": []
+    },
+    {
+      "id": "2051617",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 35,
+      "dataElementId": 1251932,
+      "name": "child_residence",
+      "type": "String",
+      "size": 55,
+      "description": "Child lives with",
+      "valueRange": [
+        "1. Both biological mother and father",
+        "2. Biological mother only",
+        "3. Biological father only",
+        "4. Biological mother and stepfather",
+        "5. Biological father and stepmother",
+        "6. Adoptive parents",
+        "7. Foster parents",
+        "8. Relatives",
+        "9. Other please specify",
+        " 10. Refused",
+        " Both natural parents",
+        " Natural father only",
+        " Natural father and stepmother",
+        " Natural mother only",
+        " Natural mother and stepfather",
+        " Adoptive or foster parents",
+        " Relatives - please specify",
+        " Institution - please specify"
+      ],
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051618",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 36,
+      "dataElementId": 1262069,
+      "name": "current_lang",
+      "type": "String",
+      "size": 10,
+      "description": "Current speech/language. Verbal?",
+      "valueRange": [
+        "Yes",
+        " No",
+        " NK"
+      ],
+      "notes": "NK = Not known",
+      "translation": []
+    },
+    {
+      "id": "2051619",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 37,
+      "dataElementId": 8309,
+      "name": "language_spoken",
+      "type": "String",
+      "size": 255,
+      "description": "Language Spoken at Home",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": "2051620",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 38,
+      "dataElementId": 1265854,
+      "name": "demo_othlanguage",
+      "type": "Integer",
+      "size": null,
+      "description": "Does your child hear any other language at home?",
+      "valueRange": [
+        " No",
+        " Yes"
+      ],
+      "notes": "0 = No; 1 = Yes",
+      "translation": [
+        {
+          "key": "0",
+          "values": [
+            "No"
+          ]
+        },
+        {
+          "key": "1",
+          "values": [
+            "Yes"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2051621",
+      "required": false,
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 39,
+      "dataElementId": 1265855,
+      "name": "demo_othlangdesc",
+      "type": "String",
+      "size": 150,
+      "description": "\"If yes, specify the language(s):\"",
+      "notes": null,
+      "translation": []
+    }
+  ]
+}
