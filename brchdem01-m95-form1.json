@@ -1,0 +1,412 @@
+{
+  "DictionaryID": "7b1fd76c-8341-46ab-8ae5-305fb67b52e2",
+  "shortName": "brchdem01-m95",
+  "Name": "form1",
+  "Description": "test",
+  "title": "Brown Child Demographics",
+  "DerivedFrom": "brchdem01",
+  "author": "smpadhy",
+  "fields": [
+    {
+      "id": "new1516137868499",
+      "required": "Recommended",
+      "condition": null,
+      "aliases": null,
+      "filterElement": null,
+      "name": "field1",
+      "description": "Field1",
+      "valueRange": null,
+      "type": "string",
+      "size": null,
+      "position": 1,
+      "dataElementId": 1,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043317,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "GUID"
+      ],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier for research subject",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043333,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043318,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 3,
+      "dataElementId": 4,
+      "name": "interview_age",
+      "type": "Integer",
+      "size": null,
+      "description": "Age in months at the time of the interview/test/sampling/imaging.",
+      "valueRange": null,
+      "notes": "Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+      "translation": []
+    },
+    {
+      "id": 2043334,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 4,
+      "dataElementId": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "valueRange": null,
+      "notes": "Required field",
+      "translation": []
+    },
+    {
+      "id": 2043319,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "chi_gen"
+      ],
+      "filterElement": "1",
+      "position": 5,
+      "dataElementId": 10,
+      "name": "gender",
+      "type": "String",
+      "size": 20,
+      "description": "Sex of the subject",
+      "valueRange": "M;F",
+      "notes": "M = Male; F = Female",
+      "translation": []
+    },
+    {
+      "id": 2043320,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "cg_comments_misc"
+      ],
+      "filterElement": null,
+      "position": 6,
+      "dataElementId": 5,
+      "name": "comments_misc",
+      "type": "String",
+      "size": 4000,
+      "description": "Miscellaneous comments on study, interview, methodology relevant to this form data",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043321,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "Child_q5"
+      ],
+      "filterElement": "1",
+      "position": 7,
+      "dataElementId": 19191,
+      "name": "race",
+      "type": "String",
+      "size": 30,
+      "description": "Race of study subject",
+      "valueRange": "American Indian/Alaska Native; Asian; Hawaiian or Pacific Islander; Black or African American; White; More than one race; Unknown or not reported",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043322,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 8,
+      "dataElementId": 1265032,
+      "name": "ses",
+      "type": "Integer",
+      "size": null,
+      "description": "Hollingshead SES Score",
+      "valueRange": null,
+      "notes": "SES at age of entry to study",
+      "translation": []
+    },
+    {
+      "id": 2043323,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 9,
+      "dataElementId": 1265033,
+      "name": "expcoc",
+      "type": "Integer",
+      "size": null,
+      "description": "Prenatal exposure to cocaine",
+      "valueRange": "0::1;999",
+      "notes": "0 = No exposure; 1 = Exposed",
+      "translation": []
+    },
+    {
+      "id": 2043324,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 10,
+      "dataElementId": 1265034,
+      "name": "expopi",
+      "type": "Integer",
+      "size": null,
+      "description": "Prenatal exposure to opiates",
+      "valueRange": "0::1;999",
+      "notes": "0 = No exposure; 1 = Exposed",
+      "translation": []
+    },
+    {
+      "id": 2043325,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 11,
+      "dataElementId": 1265035,
+      "name": "alhx",
+      "type": "Integer",
+      "size": null,
+      "description": "Prenatal exposure to alcohol",
+      "valueRange": "0::1;999",
+      "notes": "0 = No exposure; 1 = Exposed",
+      "translation": []
+    },
+    {
+      "id": 2043326,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 12,
+      "dataElementId": 1265036,
+      "name": "tohx",
+      "type": "Integer",
+      "size": null,
+      "description": "Prenatal exposure to tobacco",
+      "valueRange": "0::1;999",
+      "notes": "0 = No exposure; 1 = Exposed",
+      "translation": []
+    },
+    {
+      "id": 2043327,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 13,
+      "dataElementId": 1265037,
+      "name": "mahx",
+      "type": "Integer",
+      "size": null,
+      "description": "Prenatal exposure to marijuana",
+      "valueRange": "0::1;999",
+      "notes": "0 = No exposure; 1 = Exposed",
+      "translation": []
+    },
+    {
+      "id": 2043328,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "mother_age"
+      ],
+      "filterElement": "1",
+      "position": 14,
+      "dataElementId": 1259790,
+      "name": "preg_age_mom",
+      "type": "Integer",
+      "size": null,
+      "description": "Age of mother at the time of birth",
+      "valueRange": null,
+      "notes": "In years; 999=Unknown",
+      "translation": []
+    },
+    {
+      "id": 2043329,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 15,
+      "dataElementId": 1265038,
+      "name": "gagroup",
+      "type": "Integer",
+      "size": null,
+      "description": "Gestational Age - OB Estmated",
+      "valueRange": "1::3",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043330,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 16,
+      "dataElementId": 1265039,
+      "name": "bwgroup",
+      "type": "Integer",
+      "size": null,
+      "description": "Birth Weight",
+      "valueRange": "1::3",
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043331,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "apgar1"
+      ],
+      "filterElement": "1",
+      "position": 17,
+      "dataElementId": 4817,
+      "name": "info_apgar1",
+      "type": "String",
+      "size": 50,
+      "description": "Apgars 1 min.",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043332,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "apgar5"
+      ],
+      "filterElement": "1",
+      "position": 18,
+      "dataElementId": 4818,
+      "name": "info_apgar5",
+      "type": "String",
+      "size": 50,
+      "description": "Apgars 5 min.",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2043396,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 19,
+      "dataElementId": 19192,
+      "name": "ethnicity",
+      "type": "String",
+      "size": 30,
+      "description": "Ethnicity of participant",
+      "valueRange": "Hispanic or Latino; Not Hispanic or Latino; Unknown",
+      "notes": null,
+      "translation": [
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "0"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Not Hispanic or Latino",
+          "values": [
+            "2"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        },
+        {
+          "key": "Unknown",
+          "values": [
+            "3"
+          ]
+        },
+        {
+          "key": "Hispanic or Latino",
+          "values": [
+            "1"
+          ]
+        }
+      ]
+    }
+  ]
+}
