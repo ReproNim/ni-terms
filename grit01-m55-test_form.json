@@ -1,0 +1,10 @@
+{
+  "DictionaryID": "926e50cf-433b-410a-93bd-cb9d24232fb7",
+  "shortName": "grit01-m55",
+  "Name": "test_form",
+  "Description": "demo",
+  "title": "12-Item Grit Scale",
+  "DerivedFrom": "grit01-m76",
+  "author": "vkozloff",
+  "fields": []
+}
