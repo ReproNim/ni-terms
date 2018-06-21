@@ -1,0 +1,103 @@
+{
+  "DictionaryID": "ceee917a-e238-4fa5-bc8c-a21ec3465362",
+  "shortName": "phq01-m72",
+  "Name": "Satra-PHQ",
+  "Description": "OHBM demo",
+  "title": "Patient Health Questionnaire",
+  "DerivedFrom": "phq01",
+  "author": "satra",
+  "fields": [
+    {
+      "id": 2110314,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2110315,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2110319,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "doingthngs",
+        "phq1",
+        "phq9a"
+      ],
+      "filterElement": "1",
+      "position": 6,
+      "dataElementId": 1315417,
+      "name": "phq_1",
+      "type": "Integer",
+      "size": null,
+      "description": "Little interest or pleasure in doing things",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110320,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "flngdown",
+        "phq2",
+        "phq9b"
+      ],
+      "filterElement": "1",
+      "position": 7,
+      "dataElementId": 1315411,
+      "name": "phq_2",
+      "type": "Integer",
+      "size": null,
+      "description": "Feeling down, depressed, or hopeless",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110321,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq3",
+        "sleepprobs",
+        "phq9c"
+      ],
+      "filterElement": "1",
+      "position": 8,
+      "dataElementId": 1315413,
+      "name": "phq_3",
+      "type": "Integer",
+      "size": null,
+      "description": "Trouble falling or staying asleep, or sleeping too much",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    }
+  ]
+}
