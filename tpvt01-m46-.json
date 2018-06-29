@@ -1,0 +1,90 @@
+{
+  "DictionaryID": "42a9ac73-3ba7-4044-87f1-399f9c1b6296",
+  "shortName": "tpvt01-m46",
+  "Name": "",
+  "Description": "",
+  "title": "NIH Toolbox Picture Vocabulary Test",
+  "DerivedFrom": "tpvt01",
+  "author": "vkozloff",
+  "fields": [
+    {
+      "id": 9138,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 4124,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 7537,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "nihtbx_picvocab_date"
+      ],
+      "filterElement": null,
+      "position": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "valueRange": null,
+      "notes": "Required field",
+      "translation": []
+    },
+    {
+      "id": "new1521118667975",
+      "required": "Recommended",
+      "condition": null,
+      "aliases": null,
+      "filterElement": null,
+      "description": "Uncorrected Standard Score",
+      "valueRange": null,
+      "type": "string",
+      "size": null,
+      "position": 4,
+      "dataElementId": 4,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 8368,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "flag_cognition_vocabulary"
+      ],
+      "filterElement": "1",
+      "position": 414,
+      "name": "prob_admin",
+      "type": "Integer",
+      "size": null,
+      "description": "Flagged for potentially problematic test administration",
+      "valueRange": null,
+      "notes": "1=Flagged",
+      "translation": []
+    }
+  ]
+}
