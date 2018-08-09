@@ -1,0 +1,299 @@
+{
+  "DictionaryID": "a8176c02-04a6-4b4d-9b28-5500a1abeb13",
+  "shortName": "phq01-m26",
+  "Name": "Satra-PHQ",
+  "Description": "Satra's curation of NDA PHQ",
+  "title": "Patient Health Questionnaire",
+  "DerivedFrom": "phq01",
+  "author": "satra",
+  "fields": [
+    {
+      "id": 2110314,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "ndar_phq"
+      ],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2110315,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "date_phq"
+      ],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2110316,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "age_phq"
+      ],
+      "filterElement": "1",
+      "position": 3,
+      "dataElementId": 4,
+      "name": "interview_age",
+      "type": "Integer",
+      "size": null,
+      "description": "Age in months at the time of the interview/test/sampling/imaging.",
+      "valueRange": null,
+      "notes": "Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+      "translation": []
+    },
+    {
+      "id": 2110317,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "visit_date_phq9",
+        "gender_phq"
+      ],
+      "filterElement": null,
+      "position": 4,
+      "dataElementId": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "valueRange": null,
+      "notes": "Required field",
+      "translation": []
+    },
+    {
+      "id": 2110318,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 5,
+      "dataElementId": 10,
+      "name": "gender",
+      "type": "String",
+      "size": 20,
+      "description": "Sex of the subject",
+      "valueRange": "M;F",
+      "notes": "M = Male; F = Female",
+      "translation": []
+    },
+    {
+      "id": 2110319,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_interest",
+        "phq1",
+        "doingthngs",
+        "phq9a"
+      ],
+      "filterElement": "1",
+      "position": 6,
+      "dataElementId": 1315417,
+      "name": "phq_1",
+      "type": "Integer",
+      "size": null,
+      "description": "Little interest or pleasure in doing things",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110320,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_depressed",
+        "phq9b",
+        "flngdown",
+        "phq2"
+      ],
+      "filterElement": "1",
+      "position": 7,
+      "dataElementId": 1315411,
+      "name": "phq_2",
+      "type": "Integer",
+      "size": null,
+      "description": "Feeling down, depressed, or hopeless",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110321,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_sleep",
+        "phq3",
+        "sleepprobs",
+        "phq9c"
+      ],
+      "filterElement": "1",
+      "position": 8,
+      "dataElementId": 1315413,
+      "name": "phq_3",
+      "type": "Integer",
+      "size": null,
+      "description": "Trouble falling or staying asleep, or sleeping too much",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110322,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_energy",
+        "phq4"
+      ],
+      "filterElement": "1",
+      "position": 9,
+      "dataElementId": 1315412,
+      "name": "phq_4",
+      "type": "Integer",
+      "size": null,
+      "description": "Feeling tired or having little energy",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110323,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_appetite",
+        "phq5"
+      ],
+      "filterElement": "1",
+      "position": 10,
+      "dataElementId": 1315419,
+      "name": "phq_5",
+      "type": "Integer",
+      "size": null,
+      "description": "Poor appetite or overeating",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110324,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_self_reproach",
+        "phq6"
+      ],
+      "filterElement": "1",
+      "position": 11,
+      "dataElementId": 1315414,
+      "name": "phq_6",
+      "type": "Integer",
+      "size": null,
+      "description": "Feeling bad about yourself  or that you are a failure or have let yourself or your family down",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110325,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_concentration",
+        "phq7",
+        "concentr"
+      ],
+      "filterElement": "1",
+      "position": 12,
+      "dataElementId": 1315416,
+      "name": "phq_7",
+      "type": "Integer",
+      "size": null,
+      "description": "Trouble concentrating on things, such as reading the newspaper or watching television",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110326,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_movement",
+        "energy",
+        "phq8"
+      ],
+      "filterElement": "1",
+      "position": 13,
+      "dataElementId": 1315415,
+      "name": "phq_8",
+      "type": "Integer",
+      "size": null,
+      "description": "Moving or speaking so slowly that other people could have noticed. Or the opposite  being so fidgety or restless that you have been moving around a lot more than usual",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110327,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_suicidal_ideation",
+        "selfharm",
+        "phq9"
+      ],
+      "filterElement": "1",
+      "position": 14,
+      "dataElementId": 1315410,
+      "name": "phq_9",
+      "type": "Integer",
+      "size": null,
+      "description": "Thoughts that you would be better off dead, or of hurting yourself",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    },
+    {
+      "id": 2110328,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "phq9_question_2",
+        "severity"
+      ],
+      "filterElement": "1",
+      "position": 15,
+      "dataElementId": 1315418,
+      "name": "phq_10",
+      "type": "Integer",
+      "size": null,
+      "description": "If you circled any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people",
+      "valueRange": "0::2",
+      "notes": "0=Not bothered at all; 1=Bothered a little; 2=Bothered a lot",
+      "translation": []
+    }
+  ]
+}
