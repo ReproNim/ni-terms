@@ -1,0 +1,468 @@
+{
+  "DictionaryID": "1de4682f-0c25-4369-aef0-977c8a172708",
+  "shortName": "bai01-m11",
+  "Name": "bai_satra",
+  "Description": "",
+  "title": "Beck Anxiety Inventory",
+  "DerivedFrom": "bai01",
+  "author": "satra",
+  "fields": [
+    {
+      "id": 9858,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "guid_r03"
+      ],
+      "filterElement": null,
+      "position": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 5215,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "sid_r03"
+      ],
+      "filterElement": null,
+      "position": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 6479,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "valueRange": null,
+      "notes": "Required field",
+      "translation": []
+    },
+    {
+      "id": 2657,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 4,
+      "name": "interview_age",
+      "type": "Integer",
+      "size": null,
+      "description": "Age in months at the time of the interview/test/sampling/imaging.",
+      "valueRange": null,
+      "notes": "Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+      "translation": []
+    },
+    {
+      "id": 5898,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 5,
+      "name": "gender",
+      "type": "String",
+      "size": 20,
+      "description": "Sex of the subject",
+      "valueRange": "M;F",
+      "notes": "M = Male; F = Female",
+      "translation": []
+    },
+    {
+      "id": 6770,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai1_1",
+        "bai01_r03"
+      ],
+      "filterElement": "1",
+      "position": 6,
+      "name": "bai1",
+      "type": "Integer",
+      "size": null,
+      "description": "Numbness or tingling",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 2387,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai1_2",
+        "bai02_r03"
+      ],
+      "filterElement": "1",
+      "position": 7,
+      "name": "bai2",
+      "type": "Integer",
+      "size": null,
+      "description": "Feeling hot",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 6587,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai1_3",
+        "bai03_r03"
+      ],
+      "filterElement": "1",
+      "position": 8,
+      "name": "bai3",
+      "type": "Integer",
+      "size": null,
+      "description": "Wobbliness in legs",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 2977,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai1_4",
+        "bai04_r03"
+      ],
+      "filterElement": "1",
+      "position": 9,
+      "name": "bai4",
+      "type": "Integer",
+      "size": null,
+      "description": "Unable to relax",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 4497,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai1_5",
+        "bai05_r03"
+      ],
+      "filterElement": "1",
+      "position": 10,
+      "name": "bai5",
+      "type": "Integer",
+      "size": null,
+      "description": "Fear of worst happening",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 2405,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai1_6",
+        "bai06_r03"
+      ],
+      "filterElement": "1",
+      "position": 11,
+      "name": "bai6",
+      "type": "Integer",
+      "size": null,
+      "description": "Dizzy or lightheaded",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 4530,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai2_7",
+        "bai07_r03"
+      ],
+      "filterElement": "1",
+      "position": 12,
+      "name": "bai7",
+      "type": "Integer",
+      "size": null,
+      "description": "Heart pounding/racing",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 1706,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai2_8",
+        "bai08_r03"
+      ],
+      "filterElement": "1",
+      "position": 13,
+      "name": "bai8",
+      "type": "Integer",
+      "size": null,
+      "description": "Unsteady",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 3652,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai2_9",
+        "bai09_r03"
+      ],
+      "filterElement": "1",
+      "position": 14,
+      "name": "bai9",
+      "type": "Integer",
+      "size": null,
+      "description": "Terrified or afraid",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 8672,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai2_10",
+        "bai10_r03"
+      ],
+      "filterElement": "1",
+      "position": 15,
+      "name": "bai10",
+      "type": "Integer",
+      "size": null,
+      "description": "Nervous",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 2341,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai2_11",
+        "bai11_r03"
+      ],
+      "filterElement": "1",
+      "position": 16,
+      "name": "bai11",
+      "type": "Integer",
+      "size": null,
+      "description": "Feeling of choking",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 3762,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai3_12",
+        "bai12_r03"
+      ],
+      "filterElement": "1",
+      "position": 17,
+      "name": "bai12",
+      "type": "Integer",
+      "size": null,
+      "description": "Hands trembling",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 4366,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai3_13",
+        "bai13_r03"
+      ],
+      "filterElement": "1",
+      "position": 18,
+      "name": "bai13",
+      "type": "Integer",
+      "size": null,
+      "description": "Shaky/unsteady",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 7062,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai3_14",
+        "bai14_r03"
+      ],
+      "filterElement": "1",
+      "position": 19,
+      "name": "bai14",
+      "type": "Integer",
+      "size": null,
+      "description": "Fear of losing control",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 5033,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai3_15",
+        "bai15_r03"
+      ],
+      "filterElement": "1",
+      "position": 20,
+      "name": "bai15",
+      "type": "Integer",
+      "size": null,
+      "description": "Difficulty in breathing",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 7625,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai3_16",
+        "bai16_r03"
+      ],
+      "filterElement": "1",
+      "position": 21,
+      "name": "bai16",
+      "type": "Integer",
+      "size": null,
+      "description": "Fear of dying",
+      "valueRange": "0 :: 3; 77; 88; -999",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 1339,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai4_1",
+        "bai17_r03"
+      ],
+      "filterElement": "1",
+      "position": 22,
+      "name": "bai17",
+      "type": "Integer",
+      "size": null,
+      "description": "Scared",
+      "valueRange": "0::4;77;88;-99",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 4 = Always77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 5598,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai4_2",
+        "bai18_r03"
+      ],
+      "filterElement": "1",
+      "position": 23,
+      "name": "bai18",
+      "type": "Integer",
+      "size": null,
+      "description": "Indigestion",
+      "valueRange": "0::4;77;88;-99",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 4 = Always77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 2056,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai4_3",
+        "bai19_r03"
+      ],
+      "filterElement": "1",
+      "position": 24,
+      "name": "bai19",
+      "type": "Integer",
+      "size": null,
+      "description": "Faint/lightheaded",
+      "valueRange": "0::4;77;88;-99",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 4 = Always77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 4772,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai4_4",
+        "bai20_r03"
+      ],
+      "filterElement": "1",
+      "position": 25,
+      "name": "bai20",
+      "type": "Integer",
+      "size": null,
+      "description": "Face flushed",
+      "valueRange": "0::4;77;88;-99",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 4 = Always77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    },
+    {
+      "id": 5845,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [
+        "bai4_5",
+        "bai21_r03"
+      ],
+      "filterElement": "1",
+      "position": 26,
+      "name": "bai21",
+      "type": "Integer",
+      "size": null,
+      "description": "Hot/cold sweats",
+      "valueRange": "0::4;77;88;-99",
+      "notes": "0= Not at all; 1= Mildly but it didn't bother me much; 2= Moderately- it wasn't pleasant at times; 3= Severely- it bothered me a lot; 4 = Always77=Refused; 88=Missing; -99=NA",
+      "translation": []
+    }
+  ]
+}
