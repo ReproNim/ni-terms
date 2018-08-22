@@ -1,0 +1,59 @@
+{
+  "DictionaryID": "a0d330a3-e6f5-4a30-90b2-ba758f669b3a",
+  "shortName": "agre_srs_child_200201-m91",
+  "Name": "Test Instrument",
+  "Description": "test",
+  "title": "AGRE SRS Child 2002",
+  "DerivedFrom": "agre_srs_child_200201",
+  "author": "um4r12",
+  "fields": [
+    {
+      "id": 2024498,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 3,
+      "dataElementId": 1250502,
+      "name": "src_record_id",
+      "type": "Integer",
+      "size": null,
+      "description": "Research site ID for record",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2024502,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 7,
+      "dataElementId": 1252754,
+      "name": "srs_gender",
+      "type": "Integer",
+      "size": null,
+      "description": "Child Gender",
+      "valueRange": "1;2",
+      "notes": "1=Male;2=Female",
+      "translation": []
+    },
+    {
+      "id": 2024504,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 9,
+      "dataElementId": 1252756,
+      "name": "srs_respond_detail",
+      "type": "Integer",
+      "size": null,
+      "description": "Respondent detail (if available on form version)",
+      "valueRange": "1;2;3;4;5;6",
+      "notes": "\"1=Mother;2=Father;3=Other Relative or Custodial Adult;4=Teacher or Careworker;5=Other specialist;6=Other, please specify\"",
+      "translation": []
+    }
+  ]
+}
