@@ -1,0 +1,47 @@
+{
+  "DictionaryID": "9baaa643-734f-4caf-83b3-1895a3b14755",
+  "shortName": "grit01-m87",
+  "Name": "tst",
+  "Description": "tst",
+  "title": "12-Item Grit Scale",
+  "DerivedFrom": "grit01-m76",
+  "author": "bobanovo",
+  "fields": [
+    {
+      "id": 2081173,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 7,
+      "dataElementId": 1289667,
+      "name": "grit2",
+      "type": "Integer",
+      "size": null,
+      "description": "New ideas and projects sometimes distract me from previous ones.",
+      "valueRange": [
+        " Very much like me",
+        " Mostly like me",
+        " Somewhat like me",
+        " Not much like me",
+        " Not like me at all"
+      ],
+      "notes": "1= Very much like me; 2= Mostly like me; 3= Somewhat like me; 4= Not much like me; 5= Not like me at all"
+    },
+    {
+      "id": 2082597,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 19,
+      "dataElementId": 1290886,
+      "name": "grit_ci",
+      "type": "Float",
+      "size": null,
+      "description": "Consistency of interests",
+      "valueRange": null,
+      "notes": null
+    }
+  ]
+}
