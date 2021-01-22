@@ -1,0 +1,93 @@
+{
+  "DictionaryID": "49d1fcba-18a5-473a-8553-dbf0f71cb0c4",
+  "shortName": "grit01-m66",
+  "Name": "test1",
+  "Description": "testing PR submission",
+  "title": "12-Item Grit Scale",
+  "DerivedFrom": "grit01",
+  "author": "sanuann",
+  "fields": [
+    {
+      "id": 2081167,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2081168,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2081169,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 3,
+      "dataElementId": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2081171,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "gender"
+      ],
+      "filterElement": null,
+      "position": 5,
+      "dataElementId": 10,
+      "name": "sex",
+      "type": "String",
+      "size": 20,
+      "description": "Sex of the subject",
+      "valueRange": "M;F; O; NR",
+      "notes": "M = Male; F = Female; O=Other; NR = Not reported",
+      "translation": []
+    },
+    {
+      "id": 2081172,
+      "required": "Recommended",
+      "condition": null,
+      "aliases": [],
+      "filterElement": "1",
+      "position": 6,
+      "dataElementId": 1289669,
+      "name": "grit1",
+      "type": "Integer",
+      "size": null,
+      "description": "I have overcome setbacks to conquer an important challenge.",
+      "valueRange": "1 :: 5",
+      "notes": "5= Very much like me; 4= Mostly like me; 3= Somewhat like me; 2= Not much like me; 1= Not like me at all",
+      "translation": []
+    }
+  ]
+}
