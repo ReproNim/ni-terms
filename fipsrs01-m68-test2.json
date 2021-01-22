@@ -1,0 +1,93 @@
+{
+  "DictionaryID": "2eb46d38-d8a6-4500-ab15-05a288752535",
+  "shortName": "fipsrs01-m68",
+  "Name": "test2",
+  "Description": "testing PR submission2",
+  "title": "4-Item Positive Symptom Rating Scale",
+  "DerivedFrom": "fipsrs01",
+  "author": "sanuann",
+  "fields": [
+    {
+      "id": 2296131,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 1,
+      "dataElementId": 1,
+      "name": "subjectkey",
+      "type": "GUID",
+      "size": null,
+      "description": "The NDAR Global Unique Identifier (GUID) for research subject",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2296129,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 2,
+      "dataElementId": 2,
+      "name": "src_subject_id",
+      "type": "String",
+      "size": 20,
+      "description": "Subject ID how it's defined in lab/project",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2296123,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 3,
+      "dataElementId": 3,
+      "name": "interview_date",
+      "type": "Date",
+      "size": null,
+      "description": "Date on which the interview/genetic test/sampling/imaging/biospecimen was completed. MM/DD/YYYY",
+      "valueRange": null,
+      "notes": null,
+      "translation": []
+    },
+    {
+      "id": 2296130,
+      "required": "Required",
+      "condition": null,
+      "aliases": [],
+      "filterElement": null,
+      "position": 4,
+      "dataElementId": 4,
+      "name": "interview_age",
+      "type": "Integer",
+      "size": null,
+      "description": "Age in months at the time of the interview/test/sampling/imaging.",
+      "valueRange": null,
+      "notes": "Age is rounded to chronological month. If the research participant is 15-days-old at time of interview, the appropriate value would be 0 months. If the participant is 16-days-old, the value would be 1 month.",
+      "translation": []
+    },
+    {
+      "id": 2296124,
+      "required": "Required",
+      "condition": null,
+      "aliases": [
+        "gender"
+      ],
+      "filterElement": null,
+      "position": 5,
+      "dataElementId": 10,
+      "name": "sex",
+      "type": "String",
+      "size": 20,
+      "description": "Sex of the subject",
+      "valueRange": "M;F; O; NR",
+      "notes": "M = Male; F = Female; O=Other; NR = Not reported",
+      "translation": []
+    }
+  ]
+}
